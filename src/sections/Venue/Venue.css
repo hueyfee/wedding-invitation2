@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great Vibes:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette:wght@400;500;600;700&display=swap');
+
+
+.venue{
+
+    width:100%;
+
+    padding:0;
+
+    background:#FBF8F4;
+
+}
+
+.venue-hero{
+
+    position:relative;
+
+    width:100%;
+
+    height:100vh;
+
+    min-height:900px;
+
+    overflow:hidden;
+
+}
+
+.venue-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(
+
+    to top,
+
+    rgba(0,0,0,.78) 0%,
+
+    rgba(0,0,0,.55) 30%,
+
+    rgba(0,0,0,.28) 55%,
+
+    rgba(0,0,0,.08) 100%
+
+);
+    z-index : 1;
+
+}
+
+.venue-content{
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:2;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding-top:120px;
+
+    color:white;
+    top: 90px;
+
+}
+
+.venue-content h2{
+
+    font-size:120px;
+
+    letter-spacing:5px;
+
+    line-height:.9;
+    color: white;
+}
+
+.venue-subtitle{
+
+    letter-spacing:6px;
+
+    font-size:14px;
+
+    color:#E4C37D;
+
+    margin-bottom:18px;
+
+}
+
+.venue-script{
+
+    font-family:"Cinzel",serif;
+
+    /* font-style:italic; */
+
+    font-size:44px;
+
+    opacity:.9;
+
+    margin-bottom:8px;
+
+}
+
+.venue-content h2{
+
+    font-family:"Cinzel",serif;
+
+    font-size: 60px;
+
+    font-weight:500;
+
+    color:white;
+
+    line-height:1;
+
+    margin:0;
+
+}
+
+.venue-divider{
+
+    margin:28px 0;
+
+    color:#DFAF43;
+
+    font-size:18px;
+
+}
+
+.venue-content h3{
+
+    font-family:"Great Vibes",serif;
+
+    font-size:40px;
+
+    font-weight:480;
+
+    margin-bottom:18px;
+
+}
+
+.venue-content p{
+    
+
+    font-family:"Corgette",serif;
+
+    font-size:22px;
+
+    line-height:2;
+
+    color:rgba(255,255,255,.92);
+
+}
+
+.venue-buttons{
+
+    margin-top:60px;
+
+    display:flex;
+
+    gap:18px;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+}
+
+.venue-button{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    min-width:220px;
+
+    padding:18px 34px;
+
+    border-radius:999px;
+
+    background:#F8E8C9;
+
+    color:#4A433D;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    font-size:17px;
+
+    transition:all .35s ease;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
+
+.venue-button:hover{
+
+    transform:translateY(-4px);
+
+    background:white;
+
+}
+
+.venue-button.secondary{
+
+    background:rgba(255,255,255,.15);
+
+    border:1px solid rgba(255,255,255,.45);
+
+    color:white;
+
+    backdrop-filter:blur(8px);
+
+}
+
+.venue-button.secondary:hover{
+
+    background:rgba(255,255,255,.25);
+
+}
+.venue-bg{
+
+    position:absolute;
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+    object-position:center 20%;
+
+    transition:transform .8s ease;
+
+}
+
+.venue:hover .venue-bg{
+
+    transform:scale(1.05);
+
+}

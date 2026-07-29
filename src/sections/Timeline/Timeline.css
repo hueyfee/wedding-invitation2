@@ -1,0 +1,281 @@
+.timeline {
+    position: relative;
+    padding: 180px 0 120px;
+    overflow: hidden;
+    background:#f8f4ef;
+       
+}
+
+/* ===========================
+   Background Blobs
+=========================== */
+
+.timeline-bg {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(90px);
+    opacity: .35;
+    pointer-events: none;
+}
+
+.bg1 {
+    width: 300px;
+    height: 320px;
+    background: #F7EFE5;
+    left: 6%;
+    top: 500px;
+}
+
+.bg2 {
+    width: 340px;
+    height: 340px;
+    background: #EDF3F8;
+    right: 6%;
+    top: 1450px;
+}
+
+.bg3 {
+    width: 300px;
+    height: 300px;
+    background: #F8F3EC;
+    left: 15%;
+    bottom: 220px;
+}
+
+/* ===========================
+   Heading
+=========================== */
+
+.timeline-heading {
+
+    text-align: center;
+
+    max-width: 760px;
+
+    margin: 0 auto 140px;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+.timeline-subtitle {
+
+    display: block;
+
+    color: #B79266;
+
+    letter-spacing: 6px;
+
+    font-size: 13px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 22px;
+
+}
+
+.timeline-heading h2 {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 70px;
+
+    font-weight: 500;
+
+    color: #2F2A28;
+
+    margin-bottom: 26px;
+
+}
+
+.timeline-heading p {
+
+    color: #777;
+
+    line-height: 1.9;
+
+    font-size: 20px;
+
+}
+
+/* ===========================
+   Timeline Container
+=========================== */
+
+.timeline-container{
+
+    position:relative;
+
+    width:min(1800px,95vw);
+
+    margin:auto;
+
+}
+/* ===========================
+   SVG
+=========================== */
+
+.timeline-svg{
+
+    position:absolute;
+
+    top:0;
+
+    left:54%;
+
+    transform:translateX(-50%);
+
+    width:220px;
+
+    height:3000px;
+
+    overflow:visible;
+
+    pointer-events:none;
+
+    z-index:0;
+
+}
+
+/* ===========================
+   Decorative Flowers
+=========================== */
+
+.timeline::before {
+
+    content: "✿";
+
+    position: absolute;
+
+    left: 8%;
+
+    top: 260px;
+
+    color: #E6D3B8;
+
+    font-size: 34px;
+
+    opacity: .5;
+
+}
+
+.timeline::after {
+
+    content: "❀";
+
+    position: absolute;
+
+    right: 10%;
+
+    top: 1050px;
+
+    color: #DCC4A1;
+
+    font-size: 30px;
+
+    opacity: .45;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 1200px) {
+
+    .timeline-heading h2 {
+
+        font-size: 58px;
+
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .timeline {
+
+        padding: 100px 0;
+
+    }
+
+    .timeline-heading {
+
+        margin-bottom: 80px;
+
+        width: 90%;
+
+    }
+
+    .timeline-heading h2 {
+
+        font-size: 44px;
+
+    }
+
+    .timeline-heading p {
+
+        font-size: 17px;
+
+    }
+
+    .timeline-svg {
+
+        display: none;
+
+    }
+
+    .timeline-bg {
+
+        display: none;
+
+    }
+
+}
+
+.timeline-end{
+
+    position: relative;
+
+    margin: 180px auto 80px;
+
+    width: fit-content;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 24px;
+
+    z-index: 3;
+}
+
+.timeline-end p{
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 42px;
+
+    font-style: italic;
+
+    color: #B79266;
+
+    letter-spacing: 1px;
+
+    margin: 0;
+}
+
+.timeline-end-line{
+
+    width: 70px;
+
+    height: 1px;
+
+    background: #D9C7AF;
+
+    opacity: .6;
+}

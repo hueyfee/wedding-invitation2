@@ -1,0 +1,395 @@
+/* =========================
+   CARD LAYOUT
+========================= */
+.rsvp-card{
+
+    width:90%;
+    max-width:1150px;
+
+    margin:80px auto 0;
+
+    background:white;
+
+    border-radius:30px;
+
+    padding:70px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.08);
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:60px;
+
+}
+
+.rsvp-content{
+
+    display:grid;
+
+    grid-template-columns:55% 45%;
+
+    gap:60px;
+
+    align-items:center;
+
+}
+
+.rsvp-footer{
+
+    margin-top:60px;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+/* =========================
+   LEFT & RIGHT
+========================= */
+
+.rsvp-left{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap: 40px
+
+}
+
+.rsvp-right{
+
+    display:flex;
+
+    align-items:stretch;
+
+}
+
+/* =========================
+   PHOTO UPLOAD
+========================= */
+
+.photo-upload{
+
+    width:100%;
+
+    aspect-ratio:5 /8 ;
+
+    border:2px dashed rgba(201,154,69,.3);
+
+    border-radius:24px;
+
+    display:flex;
+
+    overflow:hidden;
+
+}
+
+.photo-upload:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.photo-upload label{
+
+    width:100%;
+    height:100%;
+
+    padding:40px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    text-align:center;
+
+}
+
+.camera{
+
+    font-size:64px;
+
+    color:#C89A45;
+
+    margin-bottom:24px;
+
+}
+
+.photo-upload h3{
+
+    font-family:"Cormorant Garamond", serif;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    color:#433B33;
+
+    margin-bottom:14px;
+
+}
+
+.photo-upload p{
+
+    font-size:15px;
+
+    color:#7A726A;
+
+    line-height:1.6;
+
+    max-width:260px;
+
+}
+
+.photo-preview{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+}
+
+/* =========================
+   FORM
+========================= */
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+    margin-bottom:0;
+
+}
+
+.form-group label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    font-weight:600;
+
+    color:#4A433D;
+
+    font-size:17px;
+
+    letter-spacing:.2px;
+
+}
+
+.form-group input{
+
+    width:100%;
+
+    max-width:480px;
+
+}
+
+.form-group input,
+.form-group textarea{
+
+    width:100%;
+
+    padding:20px 24px;
+
+    border-radius:18px;
+
+    border:1px solid #E5DDD3;
+
+    background:#FFFDF9;
+
+    font-size:16px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.form-group textarea{
+
+    resize:none;
+
+    min-height:120px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+
+    border-color:#C89A45;
+
+    box-shadow:0 0 0 4px rgba(200,154,69,.15);
+
+}
+
+/* =========================
+   GUEST COUNTER
+========================= */
+
+.guest-counter{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:32px;
+
+    margin-top:8px;
+
+}
+
+.guest-counter button{
+
+    width:44px;
+
+    height:44px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#F5EFE6;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.guest-counter button:hover{
+
+    background:#C89A45;
+
+    color:white;
+
+}
+
+.guest-counter span{
+
+    min-width:24px;
+
+    text-align:center;
+
+    font-size:22px;
+
+    font-weight:600;
+
+}
+
+/* =========================
+   ATTENDANCE
+========================= */
+
+.attendance{
+
+    display:flex;
+
+    gap:22px;
+
+    margin-top:8px;
+
+}
+
+.attendance button{
+
+    flex:1;
+
+    min-height:88px;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    border:1px solid #E5DDD3;
+
+    background:white;
+
+    color:#433B33;
+
+    font-size:17px;
+
+    line-height:1.5;
+
+    cursor:pointer;
+
+    transition:all .3s ease;
+
+}
+
+.attendance button:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+.attendance button.selected{
+
+    background:#C89A45;
+
+    border-color:#C89A45;
+
+    color:white;
+
+}
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
+
+.submit-btn{
+
+    width:320px;
+
+    padding:20px;
+
+    border:none;
+
+    border-radius:999px;
+
+    background:#C89A45;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    margin-top: 0px;
+
+}
+
+.submit-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.18);
+
+}

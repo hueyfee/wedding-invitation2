@@ -1,0 +1,173 @@
+.album{
+
+    background:#f8f4ef;
+
+    min-height:100vh;
+
+    padding:90px 20px 60px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+
+}
+
+.album-header{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.album-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+    max-width:720px;
+
+}
+
+.album-title p{
+
+    font-size:13px;
+
+    letter-spacing:8px;
+
+    color:#a38f74;
+
+    text-transform:uppercase;
+
+    margin-bottom:20px;
+
+}
+
+.album-title h2{
+
+    font-family:"Cormorant Garamond", serif;
+
+    font-size:50px;
+
+    font-weight:500;
+
+    color:#2d2d2d;
+
+    margin-bottom:28px;
+
+    line-height:1.1;
+
+}
+
+.album-title span{
+
+    display:block;
+
+    margin-top:15px;
+
+    font-size:22px;
+
+    line-height:1.9;
+
+    color:#7a7a7a;
+
+    font-weight:300;
+
+}
+
+.album-divider{
+
+    width:100px;
+
+    height:1px;
+
+    background:#ccb89d;
+
+    margin:30px auto 40px;
+
+}
+
+.album-description{
+
+    width:520px;
+
+    max-width:90%;
+
+    margin:auto;
+
+    line-height:1.9;
+
+    color:#777;
+
+    font-size:18px;
+
+}
+
+.photo-card{
+
+    width:540px;
+
+    max-width:90vw;
+
+    overflow:hidden;
+
+    border-radius:36px;
+
+    box-shadow:
+
+        0 40px 80px rgba(0,0,0,.15);
+
+    animation:floatPhoto 7s ease-in-out infinite;
+
+    transition:.4s;
+
+}
+
+.photo-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.photo-card img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+@keyframes floatPhoto{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-8px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.moment-image{
+
+    transition:
+        transform .45s ease,
+        box-shadow .45s ease;
+
+}
+

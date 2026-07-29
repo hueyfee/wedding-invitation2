@@ -1,0 +1,114 @@
+.loading{
+
+    width:100vw;
+    height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    cursor:pointer;
+
+    user-select:none;
+
+    background:url("../../assets/images/background.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+    overflow:hidden;
+
+}
+
+/* ---------------- */
+
+.logo{
+
+    font-size:90px;
+
+    font-family:"Cormorant Garamond", serif;
+
+    letter-spacing:10px;
+
+    color:#3b2b22;
+
+    margin:0;
+
+}
+
+/* ---------------- */
+
+.names{
+
+    margin-top:15px;
+
+    text-align:center;
+
+    color:#3b2b22;
+
+}
+
+.names h2{
+
+    font-family:"Cormorant Garamond", serif;
+
+    font-size:46px;
+
+    font-weight:500;
+
+    margin:8px 0;
+
+}
+
+.names p{
+
+    margin:12px 0;
+
+    font-size:26px;
+
+}
+
+/* ---------------- */
+
+.tap{
+
+    margin-top:120px;
+
+    font-size:18px;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    color:#7b6554;
+
+    animation:breathe 2.8s infinite;
+
+}
+
+/* ---------------- */
+
+@keyframes breathe{
+
+    0%{
+
+        opacity:.2;
+
+    }
+
+    50%{
+
+        opacity:.8;
+
+    }
+
+    100%{
+
+        opacity:.2;
+
+    }
+
+}

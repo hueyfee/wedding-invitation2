@@ -1,0 +1,47 @@
+.section{
+
+    padding:120px 8%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+.section-subtitle{
+
+    text-align:center;
+
+    letter-spacing:5px;
+
+    color:#B69C75;
+
+    text-transform:uppercase;
+
+    margin-bottom:18px;
+
+    font-size:.9rem;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    font-family:"Cormorant Garamond", serif;
+
+    font-size:4rem;
+
+    font-weight:400;
+
+    margin-bottom:70px;
+
+    color:#2F2F2F;
+
+}
+
+.section-content{
+
+    width:100%;
+
+}

@@ -1,0 +1,45 @@
+.moment-card{
+    width:100%;
+    display:flex;
+    margin:100px 0;
+}
+
+.album .moment-card:first-of-type{
+    margin-top:20px;
+}
+
+.moment-card:not(.reverse){
+    justify-content:flex-start;
+}
+
+.moment-card.reverse{
+    justify-content:flex-end;
+}
+
+.moment-image{
+    flex:0 0 auto;
+
+    overflow:hidden;
+
+    border-radius:28px;
+
+    box-shadow:0 30px 70px rgba(0,0,0,.12);
+}
+
+/* .moment-image.large{
+    width:560px;
+} */
+
+.moment-image.small{
+    width:560px;
+}
+
+.moment-image.medium{
+    width:900px;
+    max-width:95vw;
+}
+
+.moment-image img{
+    display:block;
+    width:100%;
+}
