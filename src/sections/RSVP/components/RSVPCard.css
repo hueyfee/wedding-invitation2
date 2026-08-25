@@ -1,18 +1,18 @@
-/* =========================
-   CARD LAYOUT
-========================= */
+/* ==========================================================
+   RSVP CARD
+========================================================== */
+
 .rsvp-card{
 
-    width:90%;
-    max-width:1150px;
+    width:min(1150px,90vw);
 
     margin:80px auto 0;
 
-    background:white;
+    padding:70px;
+
+    background:#fff;
 
     border-radius:30px;
-
-    padding:70px;
 
     box-shadow:0 25px 60px rgba(0,0,0,.08);
 
@@ -23,6 +23,10 @@
     gap:60px;
 
 }
+
+/* ==========================================================
+   CONTENT
+========================================================== */
 
 .rsvp-content{
 
@@ -36,27 +40,13 @@
 
 }
 
-.rsvp-footer{
-
-    margin-top:60px;
-
-    display:flex;
-
-    justify-content:center;
-
-}
-
-/* =========================
-   LEFT & RIGHT
-========================= */
-
 .rsvp-left{
 
     display:flex;
 
     flex-direction:column;
 
-    gap: 40px
+    gap:26px;
 
 }
 
@@ -68,35 +58,48 @@
 
 }
 
-/* =========================
-   PHOTO UPLOAD
-========================= */
+.rsvp-footer{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-top:60px;
+
+}
+
+/* ==========================================================
+   PHOTO
+========================================================== */
 
 .photo-upload{
 
     width:100%;
 
-    aspect-ratio:5 /8 ;
+    aspect-ratio:4/5;
 
     border:2px dashed rgba(201,154,69,.3);
 
     border-radius:24px;
 
+    overflow:hidden;
+
     display:flex;
 
-    overflow:hidden;
+    transition:.3s;
 
 }
 
 .photo-upload:hover{
 
-    transform:translateY(-5px);
+    transform:translateY(-4px);
 
 }
 
 .photo-upload label{
 
     width:100%;
+
     height:100%;
 
     padding:40px;
@@ -109,9 +112,9 @@
 
     align-items:center;
 
-    cursor:pointer;
-
     text-align:center;
+
+    cursor:pointer;
 
 }
 
@@ -121,13 +124,13 @@
 
     color:#C89A45;
 
-    margin-bottom:24px;
+    margin-bottom:22px;
 
 }
 
 .photo-upload h3{
 
-    font-family:"Cormorant Garamond", serif;
+    font-family:"Cormorant Garamond",serif;
 
     font-size:20px;
 
@@ -135,19 +138,19 @@
 
     color:#433B33;
 
-    margin-bottom:14px;
+    margin-bottom:12px;
 
 }
 
 .photo-upload p{
 
-    font-size:15px;
+    max-width:260px;
 
-    color:#7A726A;
+    font-size:15px;
 
     line-height:1.6;
 
-    max-width:260px;
+    color:#7A726A;
 
 }
 
@@ -163,9 +166,9 @@
 
 }
 
-/* =========================
+/* ==========================================================
    FORM
-========================= */
+========================================================== */
 
 .form-group{
 
@@ -174,8 +177,6 @@
     flex-direction:column;
 
     gap:14px;
-
-    margin-bottom:0;
 
 }
 
@@ -187,21 +188,11 @@
 
     gap:8px;
 
+    font-size:17px;
+
     font-weight:600;
 
     color:#4A433D;
-
-    font-size:17px;
-
-    letter-spacing:.2px;
-
-}
-
-.form-group input{
-
-    width:100%;
-
-    max-width:480px;
 
 }
 
@@ -209,6 +200,8 @@
 .form-group textarea{
 
     width:100%;
+
+    max-width:480px;
 
     padding:20px 24px;
 
@@ -222,15 +215,16 @@
 
     outline:none;
 
-    transition:.3s;
+    transition:.25s;
 
 }
 
 .form-group textarea{
 
-    resize:none;
+    resize:vertical;
 
     min-height:120px;
+
 }
 
 .form-group input:focus,
@@ -238,21 +232,203 @@
 
     border-color:#C89A45;
 
-    box-shadow:0 0 0 4px rgba(200,154,69,.15);
+    box-shadow:0 0 0 4px rgba(200,154,69,.12);
 
 }
 
-/* =========================
-   GUEST COUNTER
-========================= */
+/* ==========================================================
+   FIELD DESCRIPTION
+========================================================== */
 
-.guest-counter{
+.field-description{
+
+    margin-top:-6px;
+
+    margin-bottom:12px;
+
+    font-size:14px;
+
+    line-height:1.6;
+
+    color:#8D7B69;
+
+}
+
+/* ==========================================================
+   GUEST NAMES
+========================================================== */
+
+.names-section{
+
+    margin-top:8px;
+
+}
+
+.guest-names-textarea{
+
+    width:100%;
+
+    min-height:130px;
+
+    padding:18px 22px;
+
+    border-radius:18px;
+
+    border:1px solid #E5DDD3;
+
+    background:#FFFDF9;
+
+    font-size:16px;
+
+    line-height:1.7;
+
+    resize:vertical;
+
+    transition:.25s;
+
+}
+
+.guest-names-textarea:focus{
+
+    outline:none;
+
+    border-color:#C89A45;
+
+    box-shadow:0 0 0 4px rgba(200,154,69,.12);
+
+}
+
+/* ==========================================================
+   GENDER SECTION
+========================================================== */
+
+.gender-section{
+
+    margin-top:4px;
+
+}
+
+.gender-title{
 
     display:flex;
 
     align-items:center;
 
-    gap:32px;
+    gap:8px;
+
+    margin-bottom:16px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    color:#5D4938;
+
+}
+
+.gender-cards{
+
+    display:flex;
+
+    gap:18px;
+
+}
+
+.gender-card{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:22px 16px;
+
+    border:2px solid #EADBC8;
+
+    border-radius:20px;
+
+    background:#fff;
+
+    cursor:pointer;
+
+    transition:all .25s ease;
+
+}
+
+.gender-card:hover{
+
+    transform:translateY(-3px);
+
+    border-color:#C89A45;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.gender-card.active{
+
+    background:#FFF8EF;
+
+    border-color:#C89A45;
+
+    box-shadow:0 12px 30px rgba(200,154,69,.18);
+
+}
+
+.gender-icon{
+
+    color:#C89A45;
+
+    margin-bottom:8px;
+
+}
+
+.gender-name{
+
+    font-family:"Cormorant Garamond", serif;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#5D4938;
+
+    line-height:1.2;
+
+}
+
+.gender-subtitle{
+
+    margin-top:6px;
+
+    font-size:14px;
+
+    color:#9A8875;
+
+    text-align:center;
+
+    line-height:1.4;
+
+}
+
+/* ==========================================================
+   GUEST COUNTER
+========================================================== */
+
+.guest-counter{
+
+    display:flex;
+
+    justify-content:flex-start;
+
+    align-items:center;
+
+    gap:30px;
 
     margin-top:8px;
 
@@ -260,9 +436,9 @@
 
 .guest-counter button{
 
-    width:44px;
+    width:46px;
 
-    height:44px;
+    height:46px;
 
     border:none;
 
@@ -270,11 +446,13 @@
 
     background:#F5EFE6;
 
+    color:#433B33;
+
     font-size:22px;
 
     cursor:pointer;
 
-    transition:.25s;
+    transition:all .25s ease;
 
 }
 
@@ -282,13 +460,15 @@
 
     background:#C89A45;
 
-    color:white;
+    color:#fff;
+
+    transform:scale(1.05);
 
 }
 
 .guest-counter span{
 
-    min-width:24px;
+    min-width:28px;
 
     text-align:center;
 
@@ -296,17 +476,19 @@
 
     font-weight:600;
 
+    color:#433B33;
+
 }
 
-/* =========================
+/* ==========================================================
    ATTENDANCE
-========================= */
+========================================================== */
 
 .attendance{
 
     display:flex;
 
-    gap:22px;
+    gap:20px;
 
     margin-top:8px;
 
@@ -324,7 +506,7 @@
 
     border:1px solid #E5DDD3;
 
-    background:white;
+    background:#fff;
 
     color:#433B33;
 
@@ -352,17 +534,17 @@
 
     border-color:#C89A45;
 
-    color:white;
+    color:#fff;
 
 }
 
-/* =========================
+/* ==========================================================
    SUBMIT BUTTON
-========================= */
+========================================================== */
 
 .submit-btn{
 
-    width:320px;
+    width:min(360px,100%);
 
     padding:20px;
 
@@ -372,7 +554,7 @@
 
     background:#C89A45;
 
-    color:white;
+    color:#fff;
 
     font-size:18px;
 
@@ -380,9 +562,7 @@
 
     cursor:pointer;
 
-    transition:.3s;
-
-    margin-top: 0px;
+    transition:all .3s ease;
 
 }
 
@@ -391,5 +571,352 @@
     transform:translateY(-4px);
 
     box-shadow:0 15px 30px rgba(0,0,0,.18);
+
+}
+
+.submit-btn:disabled{
+
+    opacity:.65;
+
+    cursor:not-allowed;
+
+    transform:none;
+
+    box-shadow:none;
+
+}
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width:1024px){
+
+    .rsvp-card{
+
+        width:min(900px,94vw);
+
+        padding:50px;
+
+        gap:48px;
+
+    }
+
+    .rsvp-content{
+
+        grid-template-columns:1fr 1fr;
+
+        gap:40px;
+
+    }
+
+    .photo-upload label{
+
+        padding:30px;
+
+    }
+
+}
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width:768px){
+
+    /* ---------- Card ---------- */
+
+    .rsvp-card{
+
+        width:94vw;
+
+        margin:32px auto;
+
+        padding:28px 22px;
+
+        border-radius:24px;
+
+        gap:36px;
+
+    }
+
+    .rsvp-content{
+
+        display:flex;
+
+        flex-direction:column;
+
+        gap:34px;
+
+    }
+
+    .rsvp-left{
+
+        width:100%;
+
+        gap:26px;
+
+    }
+
+    .rsvp-right{
+
+        width:100%;
+
+        order:99;
+
+    }
+
+    /* ---------- Upload ---------- */
+
+    .photo-upload{
+
+        aspect-ratio:4/5;
+
+    }
+
+    .photo-upload label{
+
+        padding:28px;
+
+    }
+
+    .camera{
+
+        font-size:48px;
+
+    }
+
+    .photo-upload h3{
+
+        font-size:18px;
+
+    }
+
+    .photo-upload p{
+
+        font-size:14px;
+
+        max-width:240px;
+
+    }
+
+    /* ---------- Form ---------- */
+
+    .form-group{
+
+        gap:10px;
+
+    }
+
+    .form-group label{
+
+        font-size:16px;
+
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .guest-names-textarea{
+
+        max-width:100%;
+
+        font-size:16px;
+
+        padding:18px 20px;
+
+    }
+
+    .field-description{
+
+        font-size:13px;
+
+    }
+
+    .guest-names-textarea{
+
+        min-height:110px;
+
+    }
+
+    /* ---------- Gender ---------- */
+
+    .gender-cards{
+
+        gap:12px;
+
+    }
+
+    .gender-card{
+
+        padding:18px 10px;
+
+    }
+
+    .gender-name{
+
+        font-size:22px;
+
+    }
+
+    .gender-subtitle{
+
+        font-size:13px;
+
+    }
+
+    /* ---------- Guest Counter ---------- */
+
+    .guest-counter{
+
+        justify-content:center;
+
+        gap:24px;
+
+    }
+
+    .guest-counter button{
+
+        width:48px;
+
+        height:48px;
+
+    }
+
+    /* ---------- Attendance ---------- */
+
+    .attendance{
+
+        flex-direction:column;
+
+        gap:14px;
+
+    }
+
+    .attendance button{
+
+        width:100%;
+
+        min-height:72px;
+
+        font-size:16px;
+
+    }
+
+    /* ---------- Submit ---------- */
+
+    .submit-btn{
+
+        width:100%;
+
+        padding:18px;
+
+        font-size:17px;
+
+    }
+
+}
+
+/* ==========================================================
+   SMALL PHONE
+========================================================== */
+
+@media (max-width:430px){
+
+    .rsvp-card{
+
+        width:96vw;
+
+        padding:22px 18px;
+
+        border-radius:20px;
+
+        gap:30px;
+
+    }
+
+    .photo-upload{
+
+        border-radius:20px;
+
+    }
+
+    .photo-upload label{
+
+        padding:22px;
+
+    }
+
+    .camera{
+
+        font-size:40px;
+
+    }
+
+    .photo-upload h3{
+
+        font-size:17px;
+
+    }
+
+    .photo-upload p{
+
+        font-size:13px;
+
+        line-height:1.5;
+
+    }
+
+    .gender-cards{
+
+        gap:10px;
+
+    }
+
+    .gender-card{
+
+        padding:16px 8px;
+
+    }
+
+    .gender-name{
+
+        font-size:20px;
+
+    }
+
+    .gender-subtitle{
+
+        font-size:12px;
+
+    }
+
+    .guest-counter{
+
+        gap:18px;
+
+    }
+
+    .guest-counter span{
+
+        font-size:20px;
+
+    }
+
+    .attendance button{
+
+        min-height:66px;
+
+        font-size:15px;
+
+        padding:16px;
+
+    }
+
+    .submit-btn{
+
+        font-size:16px;
+
+        padding:16px;
+
+    }
 
 }

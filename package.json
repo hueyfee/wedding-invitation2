@@ -12,6 +12,7 @@
   "dependencies": {
     "@studio-freight/lenis": "^1.0.42",
     "@supabase/supabase-js": "^2.110.9",
+    "browser-image-compression": "^2.0.2",
     "cloudinary": "^2.10.0",
     "firebase": "^12.16.0",
     "framer-motion": "^12.42.2",

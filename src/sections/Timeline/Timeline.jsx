@@ -78,6 +78,16 @@ function Timeline() {
 
             </div>
 
+            <div className="divider">
+
+    <span className="line"></span>
+
+    <span className="heart">❤</span>
+
+    <span className="line"></span>
+
+</div>
+
             {/* Main Timeline Area */}
             <div className="timeline-container">
 

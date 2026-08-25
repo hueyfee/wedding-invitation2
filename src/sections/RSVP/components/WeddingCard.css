@@ -1,0 +1,73 @@
+.wedding-card-page{
+
+    position:fixed;
+    inset:0;
+
+    background:#f8f3eb;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    z-index:9999;
+
+    padding:30px;
+
+}
+
+.wedding-image{
+
+    width:100%;
+    max-width:520px;
+
+    border-radius:18px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,0.15);
+
+}
+
+.download-button{
+
+    margin-top:24px;
+
+    padding:14px 30px;
+
+    border:none;
+    border-radius:12px;
+
+    background:#b69156;
+    color:white;
+
+    font-size:16px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.download-button:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.return-button{
+
+    margin-top:12px;
+
+    background:none;
+    border:none;
+
+    color:#8a6a39;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    text-decoration:underline;
+
+}

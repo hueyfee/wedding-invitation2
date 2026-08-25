@@ -19,9 +19,7 @@
 
     width:100%;
 
-    height:100vh;
-
-    min-height:900px;
+    min-height:100vh;
 
     overflow:hidden;
 
@@ -76,7 +74,7 @@
     top: 90px;
 
 }
-
+/* 
 .venue-content h2{
 
     font-size:120px;
@@ -85,7 +83,7 @@
 
     line-height:.9;
     color: white;
-}
+} */
 
 .venue-subtitle{
 
@@ -101,11 +99,9 @@
 
 .venue-script{
 
-    font-family:"Cinzel",serif;
+    font-family:"Cinzel", serif;
 
-    /* font-style:italic; */
-
-    font-size:44px;
+    font-size:clamp(2rem,5vw,2.8rem);
 
     opacity:.9;
 
@@ -115,9 +111,11 @@
 
 .venue-content h2{
 
-    font-family:"Cinzel",serif;
+    font-family:"Cinzel", serif;
 
-    font-size: 60px;
+    font-size:clamp(3rem, 8vw, 5rem);
+
+    letter-spacing:5px;
 
     font-weight:500;
 
@@ -143,7 +141,7 @@
 
     font-family:"Great Vibes",serif;
 
-    font-size:40px;
+    font-size:clamp(2rem,5vw,2.8rem);
 
     font-weight:480;
 
@@ -189,6 +187,10 @@
     gap:10px;
 
     min-width:220px;
+
+    max-width: 320px;
+
+    width: 100%;
 
     padding:18px 34px;
 
@@ -253,5 +255,101 @@
 .venue:hover .venue-bg{
 
     transform:scale(1.05);
+
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width:1024px){
+
+    .venue-content{
+
+        padding:120px 30px 60px;
+
+        top:30px;
+
+    }
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:768px){
+
+    .venue-hero{
+
+        min-height:900px;
+
+    }
+
+    .venue-content{
+
+        padding:100px 24px 50px;
+
+        top:0;
+
+    }
+
+    .venue-subtitle{
+
+        font-size:12px;
+
+        letter-spacing:4px;
+
+    }
+
+    .venue-divider{
+
+        margin:20px 0;
+
+    }
+
+    .venue-buttons{
+
+        width:100%;
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:14px;
+
+        margin-top:40px;
+
+    }
+
+    .venue-button{
+
+        width:100%;
+
+        max-width:320px;
+
+        min-width:auto;
+
+    }
+
+}
+
+/* =========================
+   SMALL PHONE
+========================= */
+
+@media (max-width:430px){
+
+    .venue-content{
+
+        padding:80px 18px 40px;
+
+    }
+
+    .venue-hero{
+
+        min-height:820px;
+
+    }
 
 }

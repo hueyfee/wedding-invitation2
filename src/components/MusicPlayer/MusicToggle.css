@@ -1,0 +1,73 @@
+.music-toggle{
+
+    position:fixed;
+
+    top:28px;
+
+    right:28px;
+
+    width:48px;
+
+    height:48px;
+
+    border:none;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    background:rgba(255,255,255,.72);
+
+    backdrop-filter:blur(16px);
+
+    -webkit-backdrop-filter:blur(16px);
+
+    color:#8C6A47;
+
+    font-size:22px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    transition:.3s ease;
+
+    z-index:9999;
+
+}
+
+.music-toggle:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+
+}
+
+.music-toggle:active{
+
+    transform:scale(.94);
+
+}
+
+@media (max-width:768px){
+
+    .music-toggle{
+
+        width:42px;
+
+        height:42px;
+
+        top:18px;
+
+        right:18px;
+
+        font-size:20px;
+
+    }
+
+}
