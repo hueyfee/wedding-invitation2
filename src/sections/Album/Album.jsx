@@ -1,10 +1,10 @@
 import "./Album.css";
 
 import proposal from "../../assets/images/proposal.jpg";
-import preWedding1 from "../../assets/images/prewedding1.jpg";
-import preWedding2 from "../../assets/images/prewedding2.jpg";
-import preWedding3 from "../../assets/images/prewedding3.jpg";
-import preWedding4 from "../../assets/images/prewedding4.jpg";
+import preWedding1 from "../../assets/images/preWedding1.jpg";
+import preWedding2 from "../../assets/images/preWedding2.jpg";
+import preWedding3 from "../../assets/images/preWedding3.jpg";
+import preWedding4 from "../../assets/images/preWedding4.jpg";
 
 import MomentCard from "./components/MomentCard";
 
