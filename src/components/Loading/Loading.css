@@ -25,7 +25,7 @@
 
 /* ---------------- */
 
-.logo{
+/* .logo{
 
     font-size:90px;
 
@@ -37,6 +37,19 @@
 
     margin:0;
 
+} */
+
+.loading-logo{
+    width:180px;
+    max-width:70%;
+    height:auto;
+    margin-bottom:30px;
+
+    animation: float 4s ease-in-out infinite;
+}
+
+.loading-logo{
+    width:240px;
 }
 
 /* ---------------- */

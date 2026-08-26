@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import "./Loading.css";
 
+import logo from "../../assets/images/logo.png";
+
 function Loading({ onFinish }) {
 
     return (
@@ -28,7 +30,11 @@ function Loading({ onFinish }) {
                 }}
 
             >
-                CHN
+              <img
+    src={logo}
+    alt="Huey Nee & Chuin Han"
+    className="loading-logo"
+/>
             </motion.h1>
 
             <motion.div
