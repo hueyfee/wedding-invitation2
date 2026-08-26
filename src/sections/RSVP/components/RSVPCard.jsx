@@ -256,15 +256,20 @@ setShowCard(true);
 
     };
 
+    if (isGenerating) {
+        return <AILoading />;
+    }
+
     return (
 
         <>
 
-            {isGenerating && <AILoading />}
 
-            {showCard && (
-                <WeddingCard image = {generatedImage}  
-                             onClose={() => setShowCard(false)}/>
+{showCard && (
+                <WeddingCard
+                    image={generatedImage}
+                    onClose={() => setShowCard(false)}
+                />
             )}
 
             <div className="rsvp-card">
