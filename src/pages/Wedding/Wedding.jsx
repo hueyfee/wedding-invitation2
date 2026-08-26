@@ -1,28 +1,39 @@
+import { useState } from "react";
+
 import "./Wedding.css";
 
 import Album from "../../sections/Album/Album";
 import Timeline from "../../sections/Timeline/Timeline";
 import Venue from "../../sections/Venue/Venue";
 import RSVP from "../../sections/RSVP/RSVP";
-// import Ending from "../../sections/Ending/Ending";
+import AILoading from "../../sections/RSVP/components/AILoading";
 
 function Wedding() {
 
+    const [isGenerating, setIsGenerating] = useState(false);
+
     return (
 
-        <main className="wedding-page">
+        <>
 
-            <Album />
+            {isGenerating && <AILoading />}
 
-            <Timeline />
+            <main className="wedding-page">
 
-            <Venue />
+                <Album />
 
-            <RSVP />
+                <Timeline />
 
-            {/* <Ending /> */}
+                <Venue />
 
-        </main>
+                <RSVP
+                    isGenerating={isGenerating}
+                    setIsGenerating={setIsGenerating}
+                />
+
+            </main>
+
+        </>
 
     );
 

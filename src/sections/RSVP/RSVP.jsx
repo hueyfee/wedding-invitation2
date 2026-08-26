@@ -2,7 +2,10 @@ import "./RSVP.css";
 
 import RSVPCard from "./components/RSVPCard";
 
-function RSVP() {
+function RSVP({
+    isGenerating,
+    setIsGenerating
+}) {
 
     return (
 
@@ -24,7 +27,10 @@ function RSVP() {
 
             </div>
 
-            <RSVPCard/>
+            <RSVPCard
+    isGenerating={isGenerating}
+    setIsGenerating={setIsGenerating}
+/>
 
         </section>
 

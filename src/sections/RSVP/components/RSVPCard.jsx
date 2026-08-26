@@ -2,7 +2,7 @@
 import { useState } from "react";
 import "./RSVPCard.css";
 import { supabase } from "../../../utils/supabase";
-import AILoading from "./AILoading";
+// import AILoading from "./AILoading";
 import imageCompression from "browser-image-compression";
 
 
@@ -19,7 +19,10 @@ import {
 
 import WeddingCard from "./WeddingCard";
 
-function RSVPCard() {
+function RSVPCard({
+    isGenerating,
+    setIsGenerating
+}) {
 
     const [name, setName] = useState("");
     const [guests, setGuests] = useState(1);
@@ -33,7 +36,7 @@ function RSVPCard() {
     const [preview, setPreview] = useState(null);
 
     const [loading, setLoading] = useState(false);
-    const [isGenerating, setIsGenerating] = useState(false);
+    // const [isGenerating, setIsGenerating] = useState(false);
 
     const [showCard, setShowCard] = useState(false);
 
@@ -61,6 +64,15 @@ function RSVPCard() {
 
         setLoading(true);
         setIsGenerating(true);
+
+        window.scrollTo({
+            top:0,
+            behavior:"instant"
+        });
+
+        await new Promise(resolve => setTimeout(resolve, 100));
+
+
 
         try {
 
@@ -256,9 +268,9 @@ setShowCard(true);
 
     };
 
-    if (isGenerating) {
-        return <AILoading />;
-    }
+    // if (isGenerating) {
+    //     return <AILoading />;
+    // }
 
     return (
 
