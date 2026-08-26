@@ -23,9 +23,18 @@ dist-ssr
 *.sln
 *.sw?
 
-# Environment variables
+# dependencies
+node_modules/
+
+# build
+dist/
+
+# environment
 .env
 server/.env
 
-# Generated images
+# AI generated images
 server/generated/
+
+# macOS
+.DS_Store
