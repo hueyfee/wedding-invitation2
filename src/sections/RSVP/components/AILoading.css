@@ -1,6 +1,14 @@
 .ai-loading-overlay{
 
-    min-height:100vh;
+    position:fixed;
+
+    inset:0;
+
+    width:100vw;
+
+    height:100vh;
+
+    z-index:99999;
 
     display:flex;
 
@@ -16,8 +24,9 @@
 
     text-align:center;
 
-}
+    overflow:hidden;
 
+}
 .sparkles{
 
     font-size:42px;
