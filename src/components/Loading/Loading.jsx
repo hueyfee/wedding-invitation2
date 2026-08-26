@@ -101,7 +101,7 @@ function Loading({ onFinish }) {
                     initial={{ opacity:0 }}
 
                     animate={{
-                        opacity:[0.25,.8,0.25]
+                        opacity:[1,.8,1]
                     }}
 
                     transition={{
@@ -112,7 +112,7 @@ function Loading({ onFinish }) {
 
                 >
 
-                    ✨ Tap Anywhere ✨
+                    ✨ Tap Anywhere To Continue ✨
 
                 </motion.p>
 
