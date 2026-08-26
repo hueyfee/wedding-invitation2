@@ -19,7 +19,7 @@ function RSVP() {
                 </div>
 
                 <span>
-                    Kindly respond before 1 May 2027
+                    Kindly respond before 31 August 2026
                 </span>
 
             </div>
