@@ -156,7 +156,7 @@ if (photo) {
 
 console.log("Generating guest artwork...");
 
-const response = await fetch("http://localhost:3001/generate-invitation", {
+const response = await fetch("https://wedding-invitation2-dnue.onrender.com/generate-invitation", {
 
     method: "POST",
 
@@ -518,7 +518,7 @@ setShowCard(true);
 
                                             <p>
 
-    Upload your photo to unlock a special surprise !
+    Upload your photo to unlock a special surprise
     <br />
     <em>Please upload a photo of one person only.</em>
 
