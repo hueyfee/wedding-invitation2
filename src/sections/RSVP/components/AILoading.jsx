@@ -3,15 +3,38 @@ import "./AILoading.css";
 export default function AILoading() {
     return (
         <div className="ai-loading-overlay">
+
+            <div className="sparkles">
+                ✨
+            </div>
+
             <div className="loader"></div>
 
-            <h2>✨ Preparing your little surprise...</h2>
-
-            <p>
-                We're adding a touch of wedding magic just for you.
+            <h2>
+                Creating Your
                 <br />
-                It will be ready in about 1 minute....
+                Wedding Surprise
+            </h2>
+
+            <p className="description">
+                We're adding a touch of wedding magic
+                <br />
+                just for you.
             </p>
+
+            <div className="loading-card">
+
+                <p className="loading-text">
+                    💌 This usually takes
+                    <strong> 30–60 seconds</strong>
+                </p>
+
+                <p className="loading-note">
+                    Please keep this page open.
+                </p>
+
+            </div>
+
         </div>
     );
 }
