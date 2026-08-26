@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import "./Loading.css";
 
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/wedding-logo.png";
 
 function Loading({ onFinish }) {
 
