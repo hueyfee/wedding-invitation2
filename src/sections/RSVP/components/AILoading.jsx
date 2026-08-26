@@ -10,7 +10,7 @@ export default function AILoading() {
             <p>
                 We're adding a touch of wedding magic just for you.
                 <br />
-                It will be ready in about 10–20 seconds.
+                It will be ready in about 1 minute....
             </p>
         </div>
     );
