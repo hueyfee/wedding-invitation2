@@ -40,17 +40,26 @@
 } */
 
 .loading-logo{
-    width:180px;
+    width:200px;
     max-width:70%;
     height:auto;
     margin-bottom:30px;
 
-    animation: float 4s ease-in-out infinite;
+    filter: drop-shadow(0 3px 8px rgba(0,0,0,0.08));
 }
 
-.loading-logo{
-    width:240px;
+@keyframes floatLogo{
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-6px);
+    }
 }
+/* .loading-logo{
+    width:240px;
+} */
+
 
 /* ---------------- */
 
