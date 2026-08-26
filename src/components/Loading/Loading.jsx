@@ -16,26 +16,18 @@ function Loading({ onFinish }) {
             onClick={onFinish}
         >
 
-            <motion.h1
-
-                className="logo"
-
-                initial={{ opacity: 0, y: 20 }}
-
-                animate={{ opacity: 1, y: 0 }}
-
-                transition={{
-                    duration: 1.2,
-                    ease: [0.22,1,0.36,1]
-                }}
-
-            >
-              <img
+<motion.img
     src={logo}
     alt="Huey Nee & Chuin Han"
     className="loading-logo"
+    initial={{ opacity: 0, scale: 0.9, y: 20 }}
+    animate={{ opacity: 1, scale: 1, y: 0 }}
+    transition={{
+        duration: 1.2,
+        ease: [0.22, 1, 0.36, 1]
+    }}
 />
-            </motion.h1>
+
 
             <motion.div
 
