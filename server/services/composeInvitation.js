@@ -18,9 +18,9 @@ const GUEST_POSITION = {
 
         groundY: 1328,
 
-        targetHeight: 600,
+        targetHeight: 620,
 
-        bodyWidth : 0.88
+        bodyWidth : 0.82
 
     },
 
