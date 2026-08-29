@@ -125,7 +125,7 @@ if (photoUrl) {
 
     console.log("Guest Generated");
 
-    finalGender = guest.gender;
+    finalGender = req.body.gender;
 
 }
 else {
