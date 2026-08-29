@@ -18,7 +18,7 @@ const GUEST_POSITION = {
 
         groundY: 1328,
 
-        targetHeight: 590,
+        targetHeight: 600,
 
         bodyWidth : 0.88
 
@@ -30,7 +30,7 @@ const GUEST_POSITION = {
 
         groundY: 1340,
 
-        targetHeight: 665,
+        targetHeight: 675,
 
         bodyWidth: 0.88
 
