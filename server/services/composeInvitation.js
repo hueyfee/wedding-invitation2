@@ -424,9 +424,12 @@ resizedGuest
 
 const left = pos.left;
 
+const feetOffset = 40;
+
 const top =
     pos.groundY -
-    guestMeta.height;
+    guestMeta.height+
+    feetOffset;
 
 console.log("");
 
